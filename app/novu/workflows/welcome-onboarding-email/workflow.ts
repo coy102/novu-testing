@@ -3,7 +3,7 @@ import { renderEmail } from "../../emails/novu-onboarding-email";
 import { emailControlSchema, payloadSchema } from "./schemas";
 
 export const welcomeOnboardingEmail = workflow(
-  "welcome-onboarding-email-vercel-test",
+  "welcome-onboarding-email-vercel-deployed",
   async ({ step, payload }) => {
     await step.email(
       "send-email",
